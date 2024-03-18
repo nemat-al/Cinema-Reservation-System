@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1D7F70FE-2096-4FD7-BDCB-7D2B97782425}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>oracleTest</RootNamespace>
+    <AssemblyName>oracleTest</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Oracle.DataAccess, Version=2.112.2.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Oracle.DataAccess.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.OracleClient" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConnectionBuilder.cs" />
+    <Compile Include="DAlayer\Class\Category.cs" />
+    <Compile Include="DAlayer\Class\Customer.cs" />
+    <Compile Include="DAlayer\Class\Customer_Category.cs" />
+    <Compile Include="DAlayer\Class\Employee.cs" />
+    <Compile Include="DAlayer\Class\hall.cs" />
+    <Compile Include="DAlayer\Class\Movie.cs" />
+    <Compile Include="DAlayer\Class\MovieShow.cs" />
+    <Compile Include="DAlayer\Class\MovieWorker.cs" />
+    <Compile Include="DAlayer\Class\Movie_Category.cs" />
+    <Compile Include="DAlayer\Class\Movie_MovieWorker.cs" />
+    <Compile Include="DAlayer\Class\Offer.cs" />
+    <Compile Include="DAlayer\Class\OfferOverShow.cs" />
+    <Compile Include="DAlayer\Class\Offer_Over_Category.cs" />
+    <Compile Include="DAlayer\Class\RowInHall.cs" />
+    <Compile Include="DAlayer\Class\Seat.cs" />
+    <Compile Include="DAlayer\Class\Ticket.cs" />
+    <Compile Include="DAlayer\gateways\CategoryGateWay.cs" />
+    <Compile Include="DAlayer\gateways\CustomerGateWay.cs" />
+    <Compile Include="DAlayer\gateways\Customer_CategoryGateWay.cs" />
+    <Compile Include="DAlayer\gateways\EmployeeGateWay.cs" />
+    <Compile Include="DAlayer\gateways\hallGateWay.cs" />
+    <Compile Include="DAlayer\gateways\MovieGateway.cs" />
+    <Compile Include="DAlayer\gateways\MovieShowGateway.cs" />
+    <Compile Include="DAlayer\gateways\MovieWorkerGateway.cs" />
+    <Compile Include="DAlayer\gateways\Movie_MovieWorkerGateway.cs" />
+    <Compile Include="DAlayer\gateways\OfferGateway.cs" />
+    <Compile Include="DAlayer\gateways\OfferOverShowGateway.cs" />
+    <Compile Include="DAlayer\gateways\Offer_Over_CategoryGateway.cs" />
+    <Compile Include="DAlayer\gateways\RowInHallGateWay.cs" />
+    <Compile Include="DAlayer\gateways\SeatGateway.cs" />
+    <Compile Include="DAlayer\gateways\TicketGateway.cs" />
+    <Compile Include="ucAddOffer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucAddOffer.Designer.cs">
+      <DependentUpon>ucAddOffer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucAddOfferOverShow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucAddOfferOverShow.Designer.cs">
+      <DependentUpon>ucAddOfferOverShow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCEmployeeStatis.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCEmployeeStatis.Designer.cs">
+      <DependentUpon>UCEmployeeStatis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\FManagement.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FManagement.Designer.cs">
+      <DependentUpon>FManagement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\FReceptionist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FReceptionist.Designer.cs">
+      <DependentUpon>FReceptionist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\FsearchCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FsearchCustomer.Designer.cs">
+      <DependentUpon>FsearchCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\UCAddCustomer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="forms\UCAddCustomer.Designer.cs">
+      <DependentUpon>UCAddCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\UCAddMovie.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="forms\UCAddMovie.Designer.cs">
+      <DependentUpon>UCAddMovie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\UCaddTicket.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="forms\UCaddTicket.Designer.cs">
+      <DependentUpon>UCaddTicket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\UCPrintCustomer.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="forms\UCPrintCustomer.Designer.cs">
+      <DependentUpon>UCPrintCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\UCPrintTicket.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="forms\UCPrintTicket.Designer.cs">
+      <DependentUpon>UCPrintTicket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\UCsearchTicket.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="forms\UCsearchTicket.Designer.cs">
+      <DependentUpon>UCsearchTicket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\UCtable.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="forms\UCtable.Designer.cs">
+      <DependentUpon>UCtable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="forms\FWelcome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="forms\FWelcome.Designer.cs">
+      <DependentUpon>FWelcome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QueryBuilder.cs" />
+    <Compile Include="UCAddShow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCAddShow.Designer.cs">
+      <DependentUpon>UCAddShow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UCMovieStatis.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UCMovieStatis.Designer.cs">
+      <DependentUpon>UCMovieStatis.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ucAddOffer.resx">
+      <DependentUpon>ucAddOffer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucAddOfferOverShow.resx">
+      <DependentUpon>ucAddOfferOverShow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCEmployeeStatis.resx">
+      <DependentUpon>UCEmployeeStatis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FManagement.resx">
+      <DependentUpon>FManagement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FReceptionist.resx">
+      <DependentUpon>FReceptionist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FsearchCustomer.resx">
+      <DependentUpon>FsearchCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\FWelcome.resx">
+      <DependentUpon>FWelcome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\UCAddCustomer.resx">
+      <DependentUpon>UCAddCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\UCAddMovie.resx">
+      <DependentUpon>UCAddMovie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\UCaddTicket.resx">
+      <DependentUpon>UCaddTicket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\UCPrintCustomer.resx">
+      <DependentUpon>UCPrintCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\UCPrintTicket.resx">
+      <DependentUpon>UCPrintTicket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\UCsearchTicket.resx">
+      <DependentUpon>UCsearchTicket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="forms\UCtable.resx">
+      <DependentUpon>UCtable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="UCAddShow.resx">
+      <DependentUpon>UCAddShow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UCMovieStatis.resx">
+      <DependentUpon>UCMovieStatis.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="oracleTestClassDiagram.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="cinema-silver-screen-logo-33C2A9815C-seeklogo.com %281%29.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

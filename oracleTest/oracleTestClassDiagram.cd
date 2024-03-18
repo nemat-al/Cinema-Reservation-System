@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="oracleTest.Category" Collapsed="true">
+    <Position X="0.5" Y="6.25" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAGAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>Classes\Category.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="CategoryGateWay" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="oracleTest.Customer" Collapsed="true">
+    <Position X="3.75" Y="6.25" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAACAECAACBAgAAgAAAAQAAAAEAAAAAAAAAACAAAAgo=</HashCode>
+      <FileName>Classes\Customer.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="CustomerGateWay" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="oracleTest.Customer_Category" Collapsed="true">
+    <Position X="2" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAgAAAAAAAAAAAAAAABAAAAAQAAAAAAE=</HashCode>
+      <FileName>Classes\Customer_Category.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Customer_CategoryGateWay" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="oracleTest.Employee" Collapsed="true">
+    <Position X="5.25" Y="6.25" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAACAEAAEABAQBAgAAAAQACAAEIAAAACAAAACAAAAgg=</HashCode>
+      <FileName>Classes\Employee.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="EmployeeGateWay" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="oracleTest.hall" Collapsed="true">
+    <Position X="6.75" Y="6.25" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAACAAgA=</HashCode>
+      <FileName>Classes\hall.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="hallGateWay" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="oracleTest.Movie" Collapsed="true">
+    <Position X="8.5" Y="6.25" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAGAAIABAAiAAAAIAAAAAQAAAAEAAAAgAAAAAAAAgA=</HashCode>
+      <FileName>Classes\Movie.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="MovieGateWay" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="oracleTest.Movie_Category" Collapsed="true">
+    <Position X="27.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAAgAAAAABABAAAQAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Movie_Category.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Movie_CategoryGateWay" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="oracleTest.Movie_MovieWorker" Collapsed="true">
+    <Position X="25.5" Y="6.25" Width="1.75" />
+    <AssociationLine Name="Movie_MovieWorkerGateway" Type="oracleTest.Movie_MovieWorkerGateway" FixedToPoint="true">
+      <Path>
+        <Point X="26.25" Y="6.25" />
+        <Point X="26.25" Y="5.562" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAACCAAAAAgAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Movie_MovieWorker.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Movie_MovieWorkerGateway" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="oracleTest.MovieShow" Collapsed="true">
+    <Position X="22.25" Y="5" Width="1.25" />
+    <AssociationLine Name="MovieShowGateway" Type="oracleTest.MovieShowGateway" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="23" Y="5.562" />
+        <Point X="23" Y="5.937" />
+        <Point X="22.375" Y="5.937" />
+        <Point X="22.375" Y="6.25" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>BAADAASAAAABgAAAAQABAAEAAQAAAAABAAAAgQAAA4A=</HashCode>
+      <FileName>Classes\MovieShow.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="MovieShowGateway" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="oracleTest.MovieWorker" Collapsed="true">
+    <Position X="17" Y="6.25" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAACAEAAAABAAAAACAAAAAgAAAAAAAAAAAAACAAAAog=</HashCode>
+      <FileName>Classes\MovieWorker.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="MovieWorkerGateway" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="oracleTest.Offer" Collapsed="true">
+    <Position X="15.25" Y="6" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAgAAAAIACAAAAAAAgA=</HashCode>
+      <FileName>Classes\Offer.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="OfferGateway" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="oracleTest.Program" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="oracleTest.RowInHall" Collapsed="true">
+    <Position X="18.5" Y="6.25" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAACAAQAAAAAAAAEAAAAAAAAAAAAAAQAAAAEAAAAAgA=</HashCode>
+      <FileName>Classes\RowInHall.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="RowInHallGateway" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="oracleTest.Seat" Collapsed="true">
+    <Position X="23.5" Y="6.25" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAADAAAAAQAAAAAAAAAAAAAAAFAAAAAAAAAAAAAAAhA=</HashCode>
+      <FileName>Classes\Seat.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="SeatGateway" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="oracleTest.Ticket" Collapsed="true">
+    <Position X="20" Y="6.25" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>EEBLQIAICQAACAABAAAAYICABDAAgAQFAAAABABAQhA=</HashCode>
+      <FileName>Classes\Ticket.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="TicketGateway" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="oracleTest.CategoryGateWay" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAACQAAAAMAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>GateWay\CategoryGateWay.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="oracleTest.Customer_CategoryGateWay" Collapsed="true">
+    <Position X="2" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAAAgAAAAAAAAQAAAAEAAAAAABAAAAAAAAA=</HashCode>
+      <FileName>GateWay\Customer_CategoryGateWay.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="oracleTest.CustomerGateWay" Collapsed="true">
+    <Position X="3.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>DAABAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GateWay\CustomerGateWay.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="oracleTest.EmployeeGateWay" Collapsed="true">
+    <Position X="5.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAUAAAAMAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>GateWay\EmployeeGateWay.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="oracleTest.hallGateWay" Collapsed="true">
+    <Position X="7.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAQAAAAEgAAAAEAAAAAAAgAA=</HashCode>
+      <FileName>GateWay\hallGateWay.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="oracleTest.MovieGateWay" Collapsed="true">
+    <Position X="9" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAQAQAAQAEAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>GateWay\MovieGateWay.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="oracleTest.OfferGateway" Collapsed="true">
+    <Position X="15.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAAAAQAAABEAAAAAAAAEAAIAAAA=</HashCode>
+      <FileName>GateWay\OfferGateway.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="oracleTest.MovieWorkerGateway" Collapsed="true">
+    <Position X="17" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAIAAAAAAAAIAAIQAAAAEAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>GateWay\MovieWorkerGateway.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="oracleTest.RowInHallGateway" Collapsed="true">
+    <Position X="18.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAgAAgAAAAAAAQAAAAEAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>GateWay\RowInHallGateWay.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="oracleTest.SeatGateway" Collapsed="true">
+    <Position X="23.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAAAAAAAAAQAAAAEAAAAAQABAAIAAAAA=</HashCode>
+      <FileName>GateWay\SeatGateway.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="oracleTest.MovieShowGateway" Collapsed="true">
+    <Position X="21.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAIAAIQAAAAEAAAEAAAAAAAAAAAA=</HashCode>
+      <FileName>GateWay\MovieShowGateway.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="oracleTest.TicketGateway" Collapsed="true">
+    <Position X="20.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAQAAAAEQgAAAACAAAAAAAIA=</HashCode>
+      <FileName>GateWay\TicketGateway.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="oracleTest.Movie_MovieWorkerGateway" Collapsed="true">
+    <Position X="25.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAEAAAAAAAAAAQAAAQAAAAEAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>GateWay\Movie_MovieWorkerGateway.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="oracleTest.OfferOverShow" Collapsed="true">
+    <Position X="11" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAgAAAAIAAAAAAAAACAAAAAgAAAAAAAAAAAgAAAAI=</HashCode>
+      <FileName>Classes\OfferOverShow.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="OfferOverShowGateway" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="oracleTest.OfferOverShowGateway" Collapsed="true">
+    <Position X="10.75" Y="5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAgAAAAAAAAAAAAAAQAAAAEAAAAAAAAAAACBAAA=</HashCode>
+      <FileName>GateWay\OfferOverShowGateway.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="oracleTest.Offer_Over_Category" Collapsed="true">
+    <Position X="13" Y="6" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAECAAABAgAAACAAAAAgAAAAAAEAAAAAAEAAAAA=</HashCode>
+      <FileName>Classes\Offer_Over_Category.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Offer_Over_CategoryGateway" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="oracleTest.Offer_Over_CategoryGateway" Collapsed="true">
+    <Position X="13" Y="5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAIAAAAAAAAAARAAAAEAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>GateWay\Offer_Over_CategoryGateway.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="oracleTest.Movie_CategoryGateWay" Collapsed="true">
+    <Position X="27.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAAAAAAAQAAAAkAAAAAAAAAAAAAIBA=</HashCode>
+      <FileName>GateWay\Movie_CategoryGateWay.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
