@@ -23,7 +23,7 @@ Description:
  ## Database schema
  In the following image we can find the schema of the built database.
  
-![alt text](https://github.com/Nemat-Allah-Aloush/Cinema-Reservation-System/blob/main/imgs/Database%20schema.png " Database schema")
+![alt text](https://github.com/nemat-al/Cinema-Reservation-System/blob/main/imgs/Database%20schema.png " Database schema")
 
 ## Project Architecture
 The application consists of the following layers:
